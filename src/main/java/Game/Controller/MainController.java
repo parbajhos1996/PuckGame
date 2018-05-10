@@ -39,8 +39,8 @@ public class MainController
     {
         jatek = new Jatek(player1, player2);
         label1.setText(player1);
-        label2.setText("3x " + jatek.getJatekos1().getKorong1().getSzin());
-        label3.setText("3x " + jatek.getJatekos1().getKorong2().getSzin());
+        label2.setText("3x " + jatek.getJatekos1().getKorong1().getSzin() + "(Left Mouse)");
+        label3.setText("3x " + jatek.getJatekos1().getKorong2().getSzin() + "(Right Mouse)");
         logger.info("Az label első játékos nevére beállítva.");
     }
 
@@ -85,13 +85,13 @@ public class MainController
         if (jatek.getLepesSzam() % 2 == 0)
         {
             label1.setText(jatek.getJatekos1().getName());
-            label2.setText(jatek.getJatekos1().getKorong1().getMennyiseg() + "x " + jatek.getJatekos1().getKorong1().getSzin());
-            label3.setText(jatek.getJatekos1().getKorong2().getMennyiseg() + "x " + jatek.getJatekos1().getKorong2().getSzin());
+            label2.setText(jatek.getJatekos1().getKorong1().getMennyiseg() + "x " + jatek.getJatekos1().getKorong1().getSzin() + "(Left Mouse)");
+            label3.setText(jatek.getJatekos1().getKorong2().getMennyiseg() + "x " + jatek.getJatekos1().getKorong2().getSzin() + "(Right Mouse)");
         } else
         {
             label1.setText(jatek.getJatekos2().getName());
-            label2.setText(jatek.getJatekos2().getKorong1().getMennyiseg() + "x " + jatek.getJatekos2().getKorong1().getSzin());
-            label3.setText(jatek.getJatekos2().getKorong2().getMennyiseg() + "x " + jatek.getJatekos2().getKorong2().getSzin());
+            label2.setText(jatek.getJatekos2().getKorong1().getMennyiseg() + "x " + jatek.getJatekos2().getKorong1().getSzin() + "(Left Mouse)");
+            label3.setText(jatek.getJatekos2().getKorong2().getMennyiseg() + "x " + jatek.getJatekos2().getKorong2().getSzin() + "(Right Mouse");
         }
         logger.info("Név és korongcsere megtörtént.");
     }

@@ -66,9 +66,9 @@ public class Jatek
         {
             try
             {
-                if (helyesLepes(i / 4, i % 4, jatekos.getKorong1().getSzin()))
+                if (helyesLepes(i / 4, i % 4, jatekos.getKorong1().getSzin()) && jatekos.getKorong1().getMennyiseg() > 0)
                     counter++;
-                if (helyesLepes(i / 4, i % 4, jatekos.getKorong2().getSzin()))
+                if (helyesLepes(i / 4, i % 4, jatekos.getKorong2().getSzin()) && jatekos.getKorong2().getMennyiseg() > 0)
                     counter++;
             } catch (NullPointerException n)
             {
@@ -78,11 +78,11 @@ public class Jatek
 
         if (counter == 0 && lepesSzam % 2 == 0)
         {
-            gyoztesStr = jatekos2.getName() + " won.";
+            gyoztesStr = "No more steps." + jatekos2.getName() + " won.";
             logger.info("Nincs több lehetséges lépés." + jatekos2.getName() + " nyert.");
         } else if (counter == 0 && lepesSzam % 2 == 1)
         {
-            gyoztesStr = jatekos1.getName() + " won.";
+            gyoztesStr = "No more steps." + jatekos1.getName() + " won.";
             logger.info("Nincs több lehetséges lépés." + jatekos1.getName() + " nyert.");
         }
     }
@@ -131,12 +131,12 @@ public class Jatek
 
         if (lepesSzam % 2 == 0)
         {
-            helyes = jatekosLepes(mezoSzam, szin, jatekos1);
             nincsLepes(mezoSzam, jatekos1);
+            helyes = jatekosLepes(mezoSzam, szin, jatekos1);
         } else
         {
-            helyes = jatekosLepes(mezoSzam, szin, jatekos2);
             nincsLepes(mezoSzam, jatekos2);
+            helyes = jatekosLepes(mezoSzam, szin, jatekos2);
         }
 
         if (helyes)
