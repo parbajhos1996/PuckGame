@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="709.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game.Controller.MainController">
+   <children>
+      <TilePane fx:id="pane1" layoutX="130.0" layoutY="150.0" onMouseClicked="#addGridEvent1" prefHeight="126.0" prefWidth="110.0" style="-fx-border-color: black; -fx-border-width: 1px; -fx-background-color: white;" />
+      <TilePane fx:id="pane2" layoutX="239.0" layoutY="150.0" onMouseClicked="#addGridEvent1" prefHeight="126.0" prefWidth="110.0" style="-fx-border-color: black; -fx-border-width: 1px; -fx-background-color: white;" />
+      <TilePane fx:id="pane3" layoutX="348.0" layoutY="150.0" onMouseClicked="#addGridEvent1" prefHeight="126.0" prefWidth="110.0" style="-fx-border-color: black; -fx-border-width: 1px; -fx-background-color: white;" />
+      <TilePane fx:id="pane4" layoutX="457.0" layoutY="150.0" onMouseClicked="#addGridEvent1" prefHeight="126.0" prefWidth="110.0" style="-fx-border-color: black; -fx-border-width: 1px; -fx-background-color: white;" />
+      <TilePane fx:id="pane5" layoutX="130.0" layoutY="276.0" onMouseClicked="#addGridEvent1" prefHeight="126.0" prefWidth="110.0" style="-fx-border-color: black; -fx-border-width: 1px; -fx-background-color: white;" />
+      <TilePane fx:id="pane6" layoutX="239.0" layoutY="276.0" onMouseClicked="#addGridEvent1" prefHeight="126.0" prefWidth="110.0" style="-fx-border-color: black; -fx-border-width: 1px; -fx-background-color: white;" />
+      <TilePane fx:id="pane7" layoutX="348.0" layoutY="276.0" onMouseClicked="#addGridEvent1" prefHeight="126.0" prefWidth="110.0" style="-fx-border-color: black; -fx-border-width: 1px; -fx-background-color: white;" />
+      <TilePane fx:id="pane8" layoutX="457.0" layoutY="276.0" onMouseClicked="#addGridEvent1" prefHeight="126.0" prefWidth="110.0" style="-fx-border-color: black; -fx-border-width: 1px; -fx-background-color: white;" />
+      <TilePane fx:id="pane9" layoutX="130.0" layoutY="402.0" onMouseClicked="#addGridEvent1" prefHeight="126.0" prefWidth="110.0" style="-fx-border-color: black; -fx-border-width: 1px; -fx-background-color: white;" />
+      <TilePane fx:id="pane10" layoutX="239.0" layoutY="402.0" onMouseClicked="#addGridEvent1" prefHeight="126.0" prefWidth="110.0" style="-fx-border-color: black; -fx-border-width: 1px; -fx-background-color: white;" />
+      <TilePane fx:id="pane11" layoutX="348.0" layoutY="402.0" onMouseClicked="#addGridEvent1" prefHeight="126.0" prefWidth="110.0" style="-fx-border-color: black; -fx-border-width: 1px; -fx-background-color: white;" />
+      <TilePane fx:id="pane12" layoutX="457.0" layoutY="402.0" onMouseClicked="#addGridEvent1" prefHeight="126.0" prefWidth="110.0" style="-fx-border-color: black; -fx-border-width: 1px; -fx-background-color: white;" />
+      <TilePane fx:id="pane13" layoutX="130.0" layoutY="528.0" onMouseClicked="#addGridEvent1" prefHeight="126.0" prefWidth="110.0" style="-fx-border-color: black; -fx-border-width: 1px; -fx-background-color: white;" />
+      <TilePane fx:id="pane14" layoutX="239.0" layoutY="528.0" onMouseClicked="#addGridEvent1" prefHeight="126.0" prefWidth="110.0" style="-fx-border-color: black; -fx-border-width: 1px; -fx-background-color: white;" />
+      <TilePane fx:id="pane15" layoutX="348.0" layoutY="528.0" onMouseClicked="#addGridEvent1" prefHeight="126.0" prefWidth="110.0" style="-fx-border-color: black; -fx-border-width: 1px; -fx-background-color: white;" />
+      <TilePane fx:id="pane16" layoutX="457.0" layoutY="528.0" onMouseClicked="#addGridEvent1" prefHeight="126.0" prefWidth="110.0" style="-fx-border-color: black; -fx-border-width: 1px; -fx-background-color: white;" />
+      <Pane fx:id="pane17" layoutX="621.0" layoutY="191.0" prefHeight="400.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="label1" layoutX="14.0" layoutY="69.0" prefHeight="96.0" prefWidth="172.0" textAlignment="CENTER" textFill="#101110">
+               <font>
+                  <Font name="Bernard MT Condensed" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="button2" layoutX="49.0" layoutY="371.0" mnemonicParsing="false" onAction="#buttonAction2" prefHeight="31.0" prefWidth="101.0" style="-fx-background-color: yellow;" text="Back" />
+            <Label fx:id="label2" layoutX="63.0" layoutY="210.0" text="3x">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="label3" layoutX="63.0" layoutY="245.0" text="3x">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="button1" layoutX="671.0" layoutY="603.0" mnemonicParsing="false" onAction="#buttonAction1" prefHeight="31.0" prefWidth="101.0" style="-fx-background-color: yellow;" text="Quit" />
+   </children>
+</AnchorPane>

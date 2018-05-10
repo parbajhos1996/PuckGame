@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game.Controller.PlayerController">
+   <children>
+      <TextField fx:id="textField1" layoutX="493.0" layoutY="293.0" />
+      <TextField fx:id="textField2" layoutX="493.0" layoutY="359.0" />
+      <Label layoutX="349.0" layoutY="298.0" text="Player 1 name:" />
+      <Label layoutX="349.0" layoutY="364.0" text="Player 2 name:" />
+      <Button fx:id="button1" layoutX="471.0" layoutY="401.0" mnemonicParsing="false" onAction="#buttonAction1" prefHeight="31.0" prefWidth="101.0" style="-fx-background-color: yellow;" text="Ok" />
+      <Button fx:id="button2" layoutX="471.0" layoutY="449.0" mnemonicParsing="false" onAction="#buttonAction2" prefHeight="31.0" prefWidth="101.0" style="-fx-background-color: yellow;" text="Back" />
+   </children>
+</AnchorPane>
