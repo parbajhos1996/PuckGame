@@ -1,2 +1,2 @@
 # PuckGame
-A simple puck game.
+A játékot két játékos játszhatja egy 4 x 4 mezőből álló táblán.Mindkét játékos összesen 6 darab koronggal rendelkezik: az egyik 3 pirossal és 3 kékkel, a másik 3 zölddel és 3 sárgával. A játékosok felváltva lépnek, minden lépésben lehelyeznek egyet a saját korongjaik közül valamelyik üres mezőre, azonban nem kerülhet egymás mellé két azonos színű korong(sem függőlegesen,sem vízszintesen, sem átlósan). Az nyer akinek a lépésével 4 különböző színű korongot sikerül elhelyezni egy sorban,oszlopban vagy átlóban. Ha ez egyiküknek sem sikerül, akkor az eredmény döntetlen.
